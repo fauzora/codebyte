@@ -1,6 +1,7 @@
 (function ($) {
   "use strict";
 
+  // js external
   var review = $(".player_info_item");
   if (review.length) {
     review.owlCarousel({
@@ -100,13 +101,13 @@
 
   //   });
 
-  //remove active class from all thumbnail slides
+  //hapus active class dari semua thumbnail slides
   $(".slider-nav-thumbnails .slick-slide").removeClass("slick-active");
 
-  //set active class to first thumbnail slides
+  //set active class ke thumbnail slides pertama
   $(".slider-nav-thumbnails .slick-slide").eq(0).addClass("slick-active");
 
-  // On before slide change match active thumbnail to current slide
+  // sebelum slide berubah samakan active thumbnail ke slide saat ini
   $(".slider").on(
     "beforeChange",
     function (event, slick, currentSlide, nextSlide) {
@@ -118,7 +119,7 @@
     }
   );
 
-  //UPDATED
+  //Update
 
   $(".slider").on("afterChange", function (event, slick, currentSlide) {
     $(".content").hide();
