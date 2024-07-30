@@ -1,3 +1,4 @@
+// handle navbar ke posisi fixed di scroll
 $(window).scroll(function () {
   var window_top = $(window).scrollTop() + 1;
   if (window_top > 50) {

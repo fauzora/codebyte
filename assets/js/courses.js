@@ -1,5 +1,6 @@
 var dataObj = {};
 
+// handle response data dari API menggunakan Promise.all
 $(document).ready(function () {
   const urls = [
     { url: "https://course-ochre.vercel.app/web_courses", type: "web" },
